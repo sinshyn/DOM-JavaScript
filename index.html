@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="products-list">
+      <div class="product">
+        <h3 class="title" id="title-1">Khóa học HTML & CSS Pro</h3>
+        <p class="description">
+          Cung cấp kiến thức từ cơ bản đến nâng cao về HTML & CSS
+        </p>
+        <button class="cta-btn">Mua ngay</button>
+      </div>
+      <div class="product">
+        <h3 class="title">Khóa học Javascript Pro</h3>
+        <p class="description">
+          Cung cấp kiến thức từ cơ bản đến nâng cao về Javascript
+        </p>
+        <button class="cta-btn">Mua ngay</button>
+      </div>
+    </div>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fnames" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lnames" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Attribute Node</h2>
+    <span class="red-text">chu a</span>
+
+    <h1>
+      text content cua h1
+      <span class="red-text">chu a</span>
+      <span style="display: none">
+        Truy cập <a>fullstack.edu.vn</a> để học lập trình miễn phí các bạn
+        nhé!!!
+      </span>
+      <style>
+        .bike {
+          display: inline;
+          color: aliceblue;
+          background-color: navajowhite;
+        }
+      </style>
+    </h1>
+    <p id="inner" class="inner"></p>
+    <p id="content" class="content"></p>
+    <h2 class="box"></h2>
+
+    <ul></ul>
+
+
+
+    <p class="new-property" id="new-property" contenteditable="true">
+      <h1 draggable="true">hello Thy Sang</h1>
+      <a href="">focus</a>
+      <i>scroll</i>
+    </p>
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>
