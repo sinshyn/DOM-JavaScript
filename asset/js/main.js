@@ -113,4 +113,46 @@ eBox.outerHTML = "<span>outer</span>";
 
 let property = document.querySelector(".new-property");
 
-console.log([property]);
+let eBoxOne = document.querySelector(".box-1");
+// console.log([eBoxOne.nextElementSibling]);
+eBoxOne.innerText = "camelCase";
+// console.log(eBoxOne.style);
+Object.assign(eBoxOne.style, {
+  width: "200px",
+  height: "200px",
+  backgroundColor: "green",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  color: "white",
+  fontWeight: "700",
+});
+/* lấy ra giá trị của thuộc tính CSS inline */
+// console.log(eBoxOne.style.alignItems);
+
+// let a = document.querySelector("div");
+// Object.assign(a.style, {
+//     backgroundColor: "#f00"
+// });
+
+// Object.assign(a.nextElementSibling.style, {
+//     color: "#f05123"
+// });
+
+/* ClassList Property
+=>DOMTokenList 
+* add -> thêm class vào element
+* contains -> check class có trong element k 
+* remove -> delete class
+* toggle -> nếu có Class thì xóa >< k có thì thêm class*/
+let eBoxTwo = document.querySelector(".box-2");
+// console.log(eBoxTwo.nextElementSibling.classList.add("hello"));
+// console.log(eBoxTwo.classList);
+eBoxTwo.classList.add("red-text", "multiclass");
+eBoxTwo.classList.contains("multiclass");
+eBoxTwo.classList.replace("multiclass", "replace");
+eBoxTwo.classList.remove("multiclass");
+// setInterval(function () {
+//   eBoxTwo.classList.toggle("green-text");
+//   console.log(eBoxTwo.classList);
+// }, 1000);
