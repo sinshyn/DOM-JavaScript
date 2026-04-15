@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Event</title>
+    <style>
+      ul {
+        display: none;
+      }
+      input:focus ~ ul {
+        display: block;
+      }
+    </style>
   </head>
   <body>
+    <a href="./index.html">HOME</a>
     <div>
       <h2>DOM Events 1</h2>
       <h2>DOM Events 2</h2>
@@ -25,6 +34,32 @@
         <option value="3">3</option>
       </select>
       <input placeholder="eInput" />
+    </div>
+
+    <div>
+      <a href="https://fullstack.edu.vn/">f8 lap trinh</a>
+      <br />
+      <a href="https://www.google.com/">google</a>
+    </div>
+
+    <br />
+    <div>
+      <input type="text" placeholder="PreventDefault" />
+      <ul class="pre">
+        <li>Javascript</li>
+        <li>php</li>
+        <li>golang</li>
+      </ul>
+    </div>
+
+    <br />
+    <div class="stop">
+      Propagation
+      <button>click me!!!</button>
+    </div>
+    <br />
+    <div>
+      <button id="btn">listener Events</button>
     </div>
     <script src="./asset/js/domEvent.js"></script>
   </body>
