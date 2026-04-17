@@ -1,0 +1,20 @@
+{
+  "recipes": [
+    {
+      "name": "món chay",
+      "ingredients": "tàu hủ, súp lơ, cà rốt",
+      "id": "Fpye2Rrz5Vw"
+    },
+    {
+      "name": "bánh tráng nướng",
+      "ingredients": "bánh tráng, trứng cút, rau răm, xoài, thịt băm",
+      "id": "I6vdFkXZJl0"
+    },
+    {
+      "name": "bánh canh cua",
+      "ingredients": "cua, bột bánh canh, nấm rơm, hành lá, ",
+      "id": "lGdfHmKj5Pg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
